@@ -52,5 +52,13 @@ function handleSubmit(event) {
 }
 search("New York");
 
+function showFahrenheitTemperature(event) {
+  event.preventDefault();
+  alert("click");
+}
+
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
+
+let fahrenheitLink = document.querySelector("#Fahrenheit-link");
+fahrenheitLink.addEventListener("click", showFahrenheitTemperature);
